@@ -92,7 +92,7 @@ add_action( 'widgets_init', 'neisa_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function neisa_theme_scripts() {
-	wp_enqueue_style( 'neisa-theme-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'neisa-theme-style', get_template_directory_uri() . '/css/main.css' );
 
 	wp_enqueue_script( 'neisa-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
@@ -117,7 +117,7 @@ require get_template_directory() . '/inc/template-tags.php';
 /**
  * Custom functions that act independently of the theme templates.
  */
-require get_template_directory() . '/inc/extras.php';
+// require get_template_directory() . '/inc/extras.php';
 
 /**
  * Customizer additions.
@@ -127,4 +127,4 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-require get_template_directory() . '/inc/jetpack.php';
+// require get_template_directory() . '/inc/jetpack.php';

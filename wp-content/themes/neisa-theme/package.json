@@ -1,0 +1,23 @@
+{
+  "name": "nid-stiltest-theme",
+  "title": "WordPress theme for nid-stiltest-theme",
+  "description": "theme for the nid-stiltest-theme quiz",
+  "version": "0.2.0",
+  "homepage": "http://theshipyard.se/",
+  "author": {
+    "name": "The crew",
+    "email": "richards@orestad-linux.se",
+    "url": "http://theshipyard/"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-jshint": "~0.4.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-imagemin": "~0.4.0"
+  },
+  "keywords": []
+}
