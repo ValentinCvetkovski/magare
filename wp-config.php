@@ -4,7 +4,7 @@
  *
  * Denna fil innehåller följande konfigurationer: Inställningar för MySQL,
  * Tabellprefix, Säkerhetsnycklar, WordPress-språk, och ABSPATH.
- * Mer information på {@link http://codex.wordpress.org/Editing_wp-config.php 
+ * Mer information på {@link http://codex.wordpress.org/Editing_wp-config.php
  * Editing wp-config.php}. MySQL-uppgifter får du från ditt webbhotell.
  *
  * Denna fil används av wp-config.php-genereringsskript under installationen.
@@ -16,13 +16,13 @@
 
 // ** MySQL-inställningar - MySQL-uppgifter får du från ditt webbhotell ** //
 /** Namnet på databasen du vill använda för WordPress */
-define('DB_NAME', 'Ange databasnamn här');
+define('DB_NAME', 'neisa');
 
 /** MySQL-databasens användarnamn */
-define('DB_USER', 'Ange databasanvändare här');
+define('DB_USER', 'root');
 
 /** MySQL-databasens lösenord */
-define('DB_PASSWORD', 'Ange databaslösenord här');
+define('DB_PASSWORD', 'root');
 
 /** MySQL-server */
 define('DB_HOST', 'localhost');
@@ -61,13 +61,13 @@ define('NONCE_SALT',       'Ange en unik fras här');
  */
 $table_prefix  = 'wp_';
 
-/** 
- * För utvecklare: WordPress felsökningsläge. 
- * 
- * Ändra detta till true för att aktivera meddelanden under utveckling. 
- * Det är rekommderat att man som tilläggsskapare och temaskapare använder WP_DEBUG 
- * i sin utvecklingsmiljö. 
- */ 
+/**
+ * För utvecklare: WordPress felsökningsläge.
+ *
+ * Ändra detta till true för att aktivera meddelanden under utveckling.
+ * Det är rekommderat att man som tilläggsskapare och temaskapare använder WP_DEBUG
+ * i sin utvecklingsmiljö.
+ */
 define('WP_DEBUG', false);
 
 /* Det var allt, sluta redigera här! Blogga på. */
