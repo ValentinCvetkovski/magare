@@ -132,3 +132,86 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 // require get_template_directory() . '/inc/jetpack.php';
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* put this in a PLUGIN */
+/** Custom post types for neisa theme */
+function neisa_custom_posttypes() {
+
+	$statement = array(
+		'description'         => __( 'Statement', 'neisa-theme' ),
+		'labels'            => array(
+			'name'                => __( 'Statement', 'neisa-theme' ),
+			'singular_name'       => __( 'Statement', 'neisa-theme' ),
+			'all_items'           => __( 'Statement', 'neisa-theme' ),
+			'new_item'            => __( 'New Statement', 'neisa-theme' ),
+			'add_new'             => __( 'Add New', 'neisa-theme' ),
+			'add_new_item'        => __( 'Add New Statement', 'neisa-theme' ),
+			'edit_item'           => __( 'Edit Statement', 'neisa-theme' ),
+			'view_item'           => __( 'View Statement', 'neisa-theme' ),
+			'search_items'        => __( 'Search Statement', 'neisa-theme' ),
+			'not_found'           => __( 'No Statement found', 'neisa-theme' ),
+			'not_found_in_trash'  => __( 'No Statement found in trash', 'neisa-theme' ),
+			'parent_item_colon'   => __( 'Parent Statement', 'neisa-theme' ),
+			'menu_name'           => __( 'Statement', 'neisa-theme' ),
+		),
+		'menu_position'     => 4,
+		'menu_icon'			=> 'dashicons-slides',
+		'capability_type' 	=> 'post',
+		'public'            => true,
+		'hierarchical'      => false,
+		'show_ui'           => true,
+		'show_in_nav_menus' => true,
+		'supports'          => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+		'has_archive'       => true,
+		'rewrite'           => true,
+		'query_var'         => true,
+	);
+
+	$employees = array(
+			'description'         => __( 'employees', 'neisa-theme' ),
+			'labels'            => array(
+				'name'                => __( 'employees', 'neisa-theme' ),
+				'singular_name'       => __( 'employees', 'neisa-theme' ),
+				'all_items'           => __( 'employees', 'neisa-theme' ),
+				'new_item'            => __( 'New employees', 'neisa-theme' ),
+				'add_new'             => __( 'Add New', 'neisa-theme' ),
+				'add_new_item'        => __( 'Add New employees', 'neisa-theme' ),
+				'edit_item'           => __( 'Edit employees', 'neisa-theme' ),
+				'view_item'           => __( 'View employees', 'neisa-theme' ),
+				'search_items'        => __( 'Search employees', 'neisa-theme' ),
+				'not_found'           => __( 'No employees found', 'neisa-theme' ),
+				'not_found_in_trash'  => __( 'No employees found in trash', 'neisa-theme' ),
+				'parent_item_colon'   => __( 'Parent employees', 'neisa-theme' ),
+				'menu_name'           => __( 'employees', 'neisa-theme' ),
+			),
+			'menu_position'     => 5,
+			'menu_icon'			=> 'dashicons-groups',
+			'capability_type' 	=> 'post',
+			'public'            => true,
+			'hierarchical'      => false,
+			'show_ui'           => true,
+			'show_in_nav_menus' => true,
+			'supports'          => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+			'has_archive'       => true,
+			'rewrite'           => true,
+			'query_var'         => true,
+		);
+
+
+	register_post_type( 'statement', $statement );
+	register_post_type( 'employees', $employees );
+
+}
+add_action( 'init', 'neisa_custom_posttypes' );
