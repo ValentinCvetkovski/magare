@@ -10,9 +10,17 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<h1>Footer</h1>
-	</footer><!-- #colophon -->
+
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted">NEISA SWEDEN AB
+				Nordic Service Provider AB
+				Bergkällavägen 31 c, Sollentuna
+				08-55520250</p>
+			</div>
+    	</footer>
+
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

@@ -1,0 +1,38 @@
+/*********** MENY ***********/
+
+.navbar-nav{margin:7.5px 0 7.5px 20px}
+
+.navbar-header img{margin-top:6.5px;}
+
+@media(max-width:767px){.navbar-header img{margin-top:1px; margin-left:20px;}
+}
+
+.navbar-default {background-color: #fff; border-bottom: solid 3px #dd682c;}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #dd682c;
+  background-color: #fff;
+}
+
+
+#header{height:auto; padding-bottom:160px; background:url(../images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+
+
+
+   .news {
+	margin-top:180px;
+  padding: 30px;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  /*background-color: #eeeeee;*/
+}
+
+
