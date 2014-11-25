@@ -5,25 +5,26 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-			<?php neisa_theme_posted_on(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+		<div class="container">
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'neisa-theme' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+						<div class="row">
 
-	<footer class="entry-footer">
-		<?php neisa_theme_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+
+							<div class="col-md-8">
+								<?php
+								if ( has_post_thumbnail() ) :
+									the_post_thumbnail( 'full', array( 'class' => 'img-responsive' ) );
+								endif;
+								?>
+								<h1><?php the_title(); ?></h1>
+								<p><?php the_content(); ?></p>
+							</div><!-- /.col-xs-8 .col-md-6 -->
+
+					    </div><!-- /row -->
+
+
+					</div><!-- /container -->
+
+
 </article><!-- #post-## -->

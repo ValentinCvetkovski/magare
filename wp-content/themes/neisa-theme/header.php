@@ -33,21 +33,37 @@
 
 		    <!-- Fixed navbar -->
 	    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-	      <div class="container">
-	        <div class="navbar-header">
-	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	            <span class="sr-only">Toggle navigation</span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	          </button>
-	        	<a href="<?php echo home_url(); ?>">
-			      <img src="<?php bloginfo('template_directory'); ?> /images/logo.svg' ?>"  alt="<?= esc_attr( get_bloginfo( 'name' ) ); ?>">
-			    </a>
-	        </div>
+
+	      	<div class="container">
+
+		        <div class="navbar-header">
+		          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		        	<a href="<?php echo home_url(); ?>">
+					  <img src="<?php bloginfo('template_directory'); ?>/images/logo.svg" alt="NEISA Logo" /></a>
+				    </a>
+		        </div>
+
+		        <?php
+		    	wp_nav_menu( array(
+					'menu'              => 'primary',
+					'theme_location'    => 'primary',
+					'depth'             => 2,
+					'container'         => 'div',
+					'container_class'   => 'collapse navbar-collapse',
+					'container_id'      => 'navbar',
+					'menu_class'        => 'nav navbar-nav',
+					'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+					'walker'            => new wp_bootstrap_navwalker())
+				);
+				?>
 
 
-	        <div id="navbar" class="navbar-collapse collapse">
+	        <!--<div id="navbar" class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav">
 	            <li class="active"><a href="index.html">Start</a></li>
 	            <li><a href="om.html">Om Neisa</a></li>
@@ -72,20 +88,50 @@
 	          </ul>
 	          <ul class="nav navbar-nav navbar-right">
 	            <li><a href="../navbar/">Eng</a></li>
-	            <!-- <li><a href="../navbar-static-top/">Swe</a></li> -->
+	            <!- <li><a href="../navbar-static-top/">Swe</a></li> ->
 	            <li class="active"><a href="./">Sv <span class="sr-only">(current)</span></a></li>
 	          </ul>
-	        </div><!--/.nav-collapse -->
-	      </div>
+	        </div><!-/.nav-collapse -->
+	     	</div>
 	    </nav>
 
-<div id="header">
-  <div class="container">
-    <div class="news">
-        <h1>”Insert a Flex Slider here!”</h1>
-    </div><!-- /news -->
-  </div><!-- /container -->
-</div><!-- /header -->
+		<div id="header">
+		  <div class="container">
+		    <div class="news">
+
+
+		        <!-- Place somewhere in the <body> of your page -->
+				<div class="flexslider">
+					<ul class="slides">
+
+						<?php $new_statement = new WP_Query(
+																array(
+																'post_type'      => 'statement',
+																'posts_per_page' => -1,
+																));
+
+						if ( $new_statement->have_posts() ) :
+
+							while ( $new_statement->have_posts() ) : $new_statement->the_post(); ?>
+
+								<li>
+									<h1><?php the_title(); ?></h1>
+								</li>
+
+							<?php endwhile; ?>
+
+						<?php else: ?>
+
+						<?php endif; ?>
+
+						<?php wp_reset_postdata(); ?>
+
+					</ul>
+				</div>
+
+		    </div><!-- /news -->
+		  </div><!-- /container -->
+		</div><!-- /header -->
 
 
 

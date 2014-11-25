@@ -2,17 +2,32 @@
 # This file is distributed under the same license as the Twenty Fourteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-03-31 03:09:44+0000\n"
+"PO-Revision-Date: 2014-04-16 14:47+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/0.1\n"
-"Project-Id-Version: Twenty Fourteen\n"
+"X-Generator: Poedit 1.6.4\n"
+"Project-Id-Version: Twenty Fourteen sv_SE\n"
+"POT-Creation-Date: \n"
+"Last-Translator: Mattias Tengblad <mst@eyesx.com>\n"
+"Language-Team: WordPress Sverige <info@wpsv.se>\n"
+"Language: sv_SE\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #: inc/customizer.php:102
-msgid "The home page features your choice of up to 6 posts prominently displayed in a grid or slider, controlled by a <a href=\"%1$s\">tag</a>; you can change the tag and layout in <a href=\"%2$s\">Appearance &rarr; Customize</a>. If no posts match the tag, <a href=\"%3$s\">sticky posts</a> will be displayed instead."
-msgstr "Startsidan innehåller ditt val av upp till 6 framhävda inlägg visade i ett rutnät eller i ett bildspel, kontrollerat av en <a href=\"%1$s\">etikett</a>; du kan ändra den utvalda etiketten under <a href=\"%2$s\">Utseende &rarr; Anpassa</a>. Om inga inlägg matchar etiketten så används istället <a href=\"%3$s\">klistrade inlägg</a>."
+msgid ""
+"The home page features your choice of up to 6 posts prominently displayed in "
+"a grid or slider, controlled by a <a href=\"%1$s\">tag</a>; you can change "
+"the tag and layout in <a href=\"%2$s\">Appearance &rarr; Customize</a>. If "
+"no posts match the tag, <a href=\"%3$s\">sticky posts</a> will be displayed "
+"instead."
+msgstr ""
+"Startsidan innehåller ditt val av upp till 6 framhävda inlägg visade i ett "
+"rutnät eller i ett bildspel, kontrollerat av en <a href=\"%1$s\">etikett</"
+"a>; du kan ändra den utvalda etiketten under <a href=\"%2$s\">Utseende "
+"&rarr; Anpassa</a>. Om inga inlägg matchar etiketten så används istället <a "
+"href=\"%3$s\">klistrade inlägg</a>."
 
 #: inc/widgets.php:59
 msgid "More videos"
@@ -42,22 +57,31 @@ msgstr "Fler noteringar"
 msgid "%s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "%s <span class=\"meta-nav\">&rarr;</span>"
 
-#: inc/customizer.php:37 inc/customizer.php:102 inc/featured-content.php:407
-#: inc/featured-content.php:416 inc/featured-content.php:476
+#: inc/customizer.php:37 inc/customizer.php:102 inc/featured-content.php:410
+#: inc/featured-content.php:419 inc/featured-content.php:479
 msgctxt "featured content default tag slug"
 msgid "featured"
 msgstr "utvalt"
 
 #: inc/widgets.php:36
-msgid "Use this widget to list your recent Aside, Quote, Video, Audio, Image, Gallery, and Link posts."
-msgstr "Använd denna widget för att visa dina senaste Noterings-, Citat-, Video-, Ljud-, Bild-, Galleri- och Länk-inlägg."
+msgid ""
+"Use this widget to list your recent Aside, Quote, Video, Audio, Image, "
+"Gallery, and Link posts."
+msgstr ""
+"Använd denna widget för att visa dina senaste Noterings-, Citat-, Video-, "
+"Ljud-, Bild-, Galleri- och Länk-inlägg."
 
 msgid "http://wordpress.org/themes/twentyfourteen"
 msgstr "http://wordpress.org/themes/twentyfourteen"
 
-#: inc/customizer.php:36 inc/featured-content.php:406
-msgid "Use a <a href=\"%1$s\">tag</a> to feature your posts. If no posts match the tag, <a href=\"%2$s\">sticky posts</a> will be displayed instead."
-msgstr "Använd en <a href=\"%1$s\">etikett</a> för att markera dina inlägg som utvalda. Om inget inlägg har etiketten angiven så används istället <a href=\"%2$s\">klistrade inlägg</a>."
+#: inc/customizer.php:36 inc/featured-content.php:409
+msgid ""
+"Use a <a href=\"%1$s\">tag</a> to feature your posts. If no posts match the "
+"tag, <a href=\"%2$s\">sticky posts</a> will be displayed instead."
+msgstr ""
+"Använd en <a href=\"%1$s\">etikett</a> för att markera dina inlägg som "
+"utvalda. Om inget inlägg har etiketten angiven så används istället <a href="
+"\"%2$s\">klistrade inlägg</a>."
 
 #: 404.php:17
 msgid "Not Found"
@@ -68,8 +92,12 @@ msgid "Display Site Title &amp; Tagline"
 msgstr "Visa webbplatstitel &amp; slogan"
 
 #: inc/customizer.php:104
-msgid "For an in-depth tutorial, and more tips and tricks, visit the <a href=\"%s\">Twenty Fourteen documentation</a>."
-msgstr "För en mer fördjupad guide och fler tips, besök <a href=\"%s\">dokumentationen för Twenty Fourteen</a>."
+msgid ""
+"For an in-depth tutorial, and more tips and tricks, visit the <a href=\"%s"
+"\">Twenty Fourteen documentation</a>."
+msgstr ""
+"För en mer fördjupad guide och fler tips, besök <a href=\"%s"
+"\">dokumentationen för Twenty Fourteen</a>."
 
 #: archive.php:34
 msgctxt "monthly archives date format"
@@ -85,16 +113,28 @@ msgstr "Y"
 msgid "Site Title Color"
 msgstr "Färg för webbplatstitel"
 
-#: inc/featured-content.php:428
+#: inc/featured-content.php:431
 msgid "Tag Name"
 msgstr "Etikettnamn"
 
-#: inc/featured-content.php:433
+#: inc/featured-content.php:436
 msgid "Don&rsquo;t display tag on front end."
 msgstr "Visa inte etikett på framsidan."
 
-msgid "In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier."
-msgstr "2014 låter vårt standardtema dig att skapa en webbplats med en layout av ett responsivt magasintema med elegant och modern design. Visa dina favoriter som utvald sektion i format av  ett rutnät eller en slider. Använd widgetfälten för att anpassa din webbplats och ändra innehållslayouten med en fullbreddsmall och en författarmall för att visa upp dina medarbetare. Att skapa en webbplats i formatet som magasin har aldrig varit enklare."
+msgid ""
+"In 2014, our default theme lets you create a responsive magazine website "
+"with a sleek, modern design. Feature your favorite homepage content in "
+"either a grid or a slider. Use the three widget areas to customize your "
+"website, and change your content's layout with a full-width page template "
+"and a contributor page to show off your authors. Creating a magazine website "
+"with WordPress has never been easier."
+msgstr ""
+"2014 låter vårt standardtema dig att skapa en webbplats med en layout av ett "
+"responsivt magasintema med elegant och modern design. Visa dina favoriter "
+"som utvald sektion i format av  ett rutnät eller en slider. Använd "
+"widgetfälten för att anpassa din webbplats och ändra innehållslayouten med "
+"en fullbreddsmall och en författarmall för att visa upp dina medarbetare. "
+"Att skapa en webbplats i formatet som magasin har aldrig varit enklare."
 
 #: functions.php:254
 msgid "Previous"
@@ -106,7 +146,9 @@ msgstr "Nästa"
 
 #: 404.php:21
 msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Det verkar inte som något kunde hittas för den här platsen. Testa en sökning kanske?"
+msgstr ""
+"Det verkar inte som något kunde hittas för den här platsen. Testa en sökning "
+"kanske?"
 
 #: author.php:31
 msgid "All posts by %s"
@@ -146,14 +188,18 @@ msgid "Next Image"
 msgstr "Nästa bild"
 
 #: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
-msgid "Twenty Fourteen requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again."
-msgstr "Twenty Fourteen kräver minst WordPress, version 3.6. Du kör version %s. Uppdatera WordPress och försök igen."
+msgid ""
+"Twenty Fourteen requires at least WordPress version 3.6. You are running "
+"version %s. Please upgrade and try again."
+msgstr ""
+"Twenty Fourteen kräver minst WordPress, version 3.6. Du kör version %s. "
+"Uppdatera WordPress och försök igen."
 
 #: inc/customizer.php:19 inc/customizer.php:20
 msgid "Background may only be visible on wide screens."
 msgstr "Bakgrunder är kanske bara synlig för bredare skärmar."
 
-#: inc/customizer.php:35 inc/featured-content.php:405
+#: inc/customizer.php:35 inc/featured-content.php:408
 msgid "Featured Content"
 msgstr "Utvalt innehåll"
 
@@ -170,22 +216,32 @@ msgid "Slider"
 msgstr "Slider"
 
 #: inc/customizer.php:103
-msgid "Enhance your site design by using <a href=\"%s\">Featured Images</a> for posts you&rsquo;d like to stand out (also known as post thumbnails). This allows you to associate an image with your post without inserting it. Twenty Fourteen uses featured images for posts and pages&mdash;above the title&mdash;and in the Featured Content area on the home page."
-msgstr "Piffa upp din designen av din webbplats med hjälp av <a href=\"%s\">Utvalda bilder</a> för inlägg du vill ska sticka ut (även kallat inläggsminiatyrer). Detta gör att du kan associera en bild med ditt inlägg utan att infoga den. I Twenty Fourteen används utvalda bilder för inlägg och sidor ovanför titeln och i sektionen för utvalt innehåll på startsidan."
+msgid ""
+"Enhance your site design by using <a href=\"%s\">Featured Images</a> for "
+"posts you&rsquo;d like to stand out (also known as post thumbnails). This "
+"allows you to associate an image with your post without inserting it. Twenty "
+"Fourteen uses featured images for posts and pages&mdash;above the "
+"title&mdash;and in the Featured Content area on the home page."
+msgstr ""
+"Piffa upp din designen av din webbplats med hjälp av <a href=\"%s\">Utvalda "
+"bilder</a> för inlägg du vill ska sticka ut (även kallat inläggsminiatyrer). "
+"Detta gör att du kan associera en bild med ditt inlägg utan att infoga den. "
+"I Twenty Fourteen används utvalda bilder för inlägg och sidor ovanför titeln "
+"och i sektionen för utvalt innehåll på startsidan."
 
-#: inc/template-tags.php:58
+#: inc/template-tags.php:53
 msgid "Posts navigation"
 msgstr "Inläggsnavigering"
 
-#: inc/template-tags.php:89
+#: inc/template-tags.php:84
 msgid "<span class=\"meta-nav\">Published In</span>%title"
 msgstr "<span class=\"meta-nav\">Pubicerat i</span>%title"
 
-#: inc/template-tags.php:91
+#: inc/template-tags.php:86
 msgid "<span class=\"meta-nav\">Previous Post</span>%title"
 msgstr "<span class=\"meta-nav\">Föregående inlägg</span>%title"
 
-#: inc/template-tags.php:92
+#: inc/template-tags.php:87
 msgid "<span class=\"meta-nav\">Next Post</span>%title"
 msgstr "<span class=\"meta-nav\">Nästa inlägg</span>%title"
 
@@ -199,9 +255,12 @@ msgstr "Ljud"
 
 #: inc/widgets.php:162
 msgid "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photo</a>."
-msgid_plural "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photos</a>."
-msgstr[0] "Detta galleri innehåller <a href=\"%1$s\" rel=\"bookmark\">%2$s bild</a>."
-msgstr[1] "Detta galleri innehåller <a href=\"%1$s\" rel=\"bookmark\">%2$s bilder</a>."
+msgid_plural ""
+"This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photos</a>."
+msgstr[0] ""
+"Detta galleri innehåller <a href=\"%1$s\" rel=\"bookmark\">%2$s bild</a>."
+msgstr[1] ""
+"Detta galleri innehåller <a href=\"%1$s\" rel=\"bookmark\">%2$s bilder</a>."
 
 #: inc/widgets.php:255
 msgid "Title:"
@@ -334,7 +393,7 @@ msgctxt "Lato font: on or off"
 msgid "on"
 msgstr "på"
 
-#: functions.php:491
+#: functions.php:488
 msgid "Page %s"
 msgstr "Sida %s"
 
@@ -350,19 +409,19 @@ msgstr "Primär meny"
 msgid "Skip to content"
 msgstr "Hoppa till innehåll"
 
-#: inc/template-tags.php:85
+#: inc/template-tags.php:80
 msgid "Post navigation"
 msgstr "Inläggsnavigering"
 
-#: inc/template-tags.php:50
+#: inc/template-tags.php:45
 msgid "&larr; Previous"
 msgstr "&larr; Föregående"
 
-#: inc/template-tags.php:51
+#: inc/template-tags.php:46
 msgid "Next &rarr;"
 msgstr "Nästa &rarr;"
 
-#: inc/template-tags.php:109
+#: inc/template-tags.php:104
 msgid "Sticky"
 msgstr "Klistrad"
 
@@ -371,16 +430,26 @@ msgid "Nothing Found"
 msgstr "Inget funnet"
 
 #: content-none.php:18
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Är du redo att posta ditt första inlägg? <a href=\"%1$s\">Starta här</a>."
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Är du redo att posta ditt första inlägg? <a href=\"%1$s\">Starta här</a>."
 
 #: content-none.php:22
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Ledsen, inget matchade dina sökkriterier. Vänligen försök igen med andra nyckelord."
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Ledsen, inget matchade dina sökkriterier. Vänligen försök igen med andra "
+"nyckelord."
 
 #: content-none.php:27
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Det verkar inte som om vi kan hitta det du letar efter. Kanske kan en sökning hjälpa."
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Det verkar inte som om vi kan hitta det du letar efter. Kanske kan en "
+"sökning hjälpa."
 
 #: inc/widgets.php:58 taxonomy-post_format.php:36
 msgid "Videos"

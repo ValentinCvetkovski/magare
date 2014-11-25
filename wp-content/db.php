@@ -1,0 +1,1 @@
+/Applications/MAMP/htdocs/DOUZE/magare/wp-content/plugins/query-monitor/wp-content/db.php

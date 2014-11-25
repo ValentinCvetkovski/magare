@@ -2,20 +2,36 @@
 # This file is distributed under the same license as the Twenty Thirteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-11-21 20:50:36+0000\n"
+"PO-Revision-Date: 2014-04-16 14:46+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/0.1\n"
-"Project-Id-Version: Twenty Thirteen\n"
+"X-Generator: Poedit 1.6.4\n"
+"Project-Id-Version: Twenty Thirteen sv_SE\n"
+"POT-Creation-Date: \n"
+"Last-Translator: Mattias Tengblad <mst@eyesx.com>\n"
+"Language-Team: WordPress Sverige <info@wpsv.se>\n"
+"Language: sv_SE\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 
 #: 404.php:16
 msgid "Not Found"
 msgstr "Kunde inte hittas"
 
-msgid "The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small."
-msgstr "2013 års standardtema för WordPress tar oss tillbaka till bloggen, med funktioner som en fulladdad lista med inläggsformat som var och ett visas på sitt eget vackra och unika sätt. Designdetaljer i överflöd, som börjar med en vibrerande färgschema och matchande bilder för sidhuvudet, vacker typografi och ikoner och en flexibel layout som ser bra ut på alla enheter, stora som små."
+msgid ""
+"The 2013 theme for WordPress takes us back to the blog, featuring a full "
+"range of post formats, each displayed beautifully in their own unique way. "
+"Design details abound, starting with a vibrant color scheme and matching "
+"header images, beautiful typography and icons, and a flexible layout that "
+"looks great on any device, big or small."
+msgstr ""
+"2013 års standardtema för WordPress tar oss tillbaka till bloggen, med "
+"funktioner som en fulladdad lista med inläggsformat som var och ett visas på "
+"sitt eget vackra och unika sätt. Designdetaljer i överflöd, som börjar med "
+"en vibrerande färgschema och matchande bilder för sidhuvudet, vacker "
+"typografi och ikoner och en flexibel layout som ser bra ut på alla enheter, "
+"stora som små."
 
 #: functions.php:233
 msgid "Appears in the footer section of the site."
@@ -45,8 +61,12 @@ msgid "Full resolution"
 msgstr "Full upplösning"
 
 #: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
-msgid "Twenty Thirteen requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again."
-msgstr "Twenty Thirteen kräver minst WordPress version 3.6. Du kör version %s. Vänligen uppdatera och försök igen."
+msgid ""
+"Twenty Thirteen requires at least WordPress version 3.6. You are running "
+"version %s. Please upgrade and try again."
+msgstr ""
+"Twenty Thirteen kräver minst WordPress version 3.6. Du kör version %s. "
+"Vänligen uppdatera och försök igen."
 
 #: 404.php:21
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
@@ -54,7 +74,9 @@ msgstr "Det här var ju lite pinsamt, inte sant?"
 
 #: 404.php:22
 msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Det verkar som inget kunde hittas för denna plats. Vill du kanske försöka med en sökning?"
+msgstr ""
+"Det verkar som inget kunde hittas för denna plats. Vill du kanske försöka "
+"med en sökning?"
 
 #: archive.php:29
 msgid "Daily Archives: %s"
@@ -165,16 +187,26 @@ msgid "Nothing Found"
 msgstr "Inget funnet"
 
 #: content-none.php:18
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Är du redo att posta ditt första inlägg? <a href=\"%1$s\">Starta här</a>."
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Är du redo att posta ditt första inlägg? <a href=\"%1$s\">Starta här</a>."
 
 #: content-none.php:22
-msgid "Sorry, but nothing matched your search terms. Please try again with different keywords."
-msgstr "Beklagar, inget som matchade dina söktermer kunde hittas. Vänligen försök igen med andra sökord."
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+msgstr ""
+"Beklagar, inget som matchade dina söktermer kunde hittas. Vänligen försök "
+"igen med andra sökord."
 
 #: content-none.php:27
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Det verkar inte som om vi kan hitta det du letar efter. Kanske kan en sökning hjälpa."
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Det verkar inte som om vi kan hitta det du letar efter. Kanske kan en "
+"sökning hjälpa."
 
 #: footer.php:19
 msgid "http://wordpress.org/"
@@ -258,8 +290,14 @@ msgid "Skip to content"
 msgstr "Hoppa till innehåll"
 
 #: image.php:22
-msgid "<span class=\"attachment-meta\">Published on <time class=\"entry-date\" datetime=\"%1$s\">%2$s</time> in <a href=\"%3$s\" title=\"Return to %4$s\" rel=\"gallery\">%5$s</a></span>"
-msgstr "<span class=\"attachment-meta\">Publicerat <time class=\"entry-date\" datetime=\"%1$s\">%2$s</time> i <a href=\"%3$s\" title=\"Tillbaka till %4$s\" rel=\"gallery\">%5$s</a></span>"
+msgid ""
+"<span class=\"attachment-meta\">Published on <time class=\"entry-date\" "
+"datetime=\"%1$s\">%2$s</time> in <a href=\"%3$s\" title=\"Return to %4$s\" "
+"rel=\"gallery\">%5$s</a></span>"
+msgstr ""
+"<span class=\"attachment-meta\">Publicerat <time class=\"entry-date\" "
+"datetime=\"%1$s\">%2$s</time> i <a href=\"%3$s\" title=\"Tillbaka till %4$s"
+"\" rel=\"gallery\">%5$s</a></span>"
 
 #: image.php:51
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"

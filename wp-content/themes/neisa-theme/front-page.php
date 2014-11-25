@@ -10,35 +10,56 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-            <div class="front-page-container">
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-				<div class="container">
+	            <div class="front-page-container">
 
-				<div class="row">
-				        <div class="col-md-8">
+					<div class="container">
 
-				          <h2>NEISA</h2>
-				          <hr>
-				          <p>Nunc sit amet velit in tortor congue suscipit. Nulla ullamcorper mattis ultrices. Etiam ornare libero at ullamcorper efficitur. In non risus nisl.
-				Duis lacus nulla, gravida quis nibh quis, tristique laoreet ligula. Morbi bibendum urna eget tincidunt dictum. Cras vitae. Aliquam lobortis elementum lobortis. Nam semper risus ut congue interdum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sus- pendisse vitae.</p>
-				        </div>
-				        <div class="col-md-4">
+						<div class="row">
 
-				          <h2>NYHETER</h2>
-				          <hr>
-				          <p>• <a href="#">In non risus nisl. Duis lacus nulla,
-				gravida quis nibh...</a></p>
-				<p>• <a href="#">Morbi bibendum urna eget tincidunt dictum. Cras vitae...</a></p>
-				<p>• <a href="#">Nulla ullamcorper mattis ultrices.
-				Etiam ornare libero...</a></p>
-				       </div>
+						        <div class="col-md-8">
+						        	<h2><?php _e( 'NEISA', 'neisa-theme' ); ?></h2>
+						        	<hr>
+									<?php the_content(); ?>
+								</div>
 
-				     </div><!-- /row -->
+						        <div class="col-md-4">
+									<h2><?php _e( 'NYHETER', 'neisa-theme' ); ?></h2>
+									<hr>
+
+						        	<?php $news = new WP_Query(
+																array(
+																'post_type'      => 'post',
+																'posts_per_page' => 3,
+																));
+
+									if ( $news->have_posts() ) :
+
+										while ( $news->have_posts() ) : $news->the_post(); ?>
+
+											<li>
+												<a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a>
+											</li>
+
+										<?php endwhile; ?>
+
+									<?php else: ?>
+
+									<?php endif; ?>
+
+									<?php wp_reset_postdata(); ?>
+
+						       </div>
+
+						</div><!-- /row -->
 
 
-				</div><!-- /container -->
+					</div><!-- /container -->
 
-            </div><!-- .front-page-container -->
+	            </div><!-- .front-page-container -->
+
+			<?php endwhile; endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
