@@ -12,6 +12,44 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+			<div id="header">
+		  <div class="container">
+		    <div class="news">
+
+		        <!-- Place somewhere in the <body> of your page -->
+				<div class="flexslider">
+					<ul class="slides">
+
+						<?php $new_statement = new WP_Query(
+																array(
+																'post_type'      => 'statement',
+																'posts_per_page' => -1,
+																));
+
+						if ( $new_statement->have_posts() ) :
+
+							while ( $new_statement->have_posts() ) : $new_statement->the_post(); ?>
+
+								<li>
+									<h1><?php the_title(); ?></h1>
+								</li>
+
+							<?php endwhile; ?>
+
+						<?php else: ?>
+
+						<?php endif; ?>
+
+						<?php wp_reset_postdata(); ?>
+
+					</ul>
+				</div>
+
+		    </div><!-- /news -->
+		  </div><!-- /container -->
+		</div><!-- /header -->
+
+
 	            <div class="front-page-container">
 
 					<div class="container">

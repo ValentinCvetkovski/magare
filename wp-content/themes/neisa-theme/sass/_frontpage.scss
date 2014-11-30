@@ -1,3 +1,23 @@
+#header{
+	height: 300px; //auto;
+	padding-bottom:160px;
+	background:url(../images/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+.news {
+	margin-top:100px;
+	padding: 30px;
+	font-size: 24px;
+	font-weight: 200;
+	line-height: 2.1428571435;
+	color: inherit;
+	/*background-color: #eeeeee;*/
+}
 
 
 .container .row{margin:40px 0;}

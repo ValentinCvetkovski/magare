@@ -11,6 +11,14 @@ Template Name: One Column
 
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+			<div id="header-title">
+				<div class="container">
+					<div class="head-title">
+						<?php the_title(); ?>
+				    </div><!-- /news -->
+				</div><!-- /container -->
+			</div><!-- /header -->
+
 				<article id="post-<?php the_ID(); ?>" <?php post_class( 'contact-page-template' ); ?>>
 
 					<div class="container">

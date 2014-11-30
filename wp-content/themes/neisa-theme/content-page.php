@@ -11,6 +11,15 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
+		<div id="header-title">
+			<div class="container">
+				<div class="head-title">
+					<?php the_title(); ?>
+			    </div><!-- /news -->
+			</div><!-- /container -->
+		</div><!-- /header -->
+
+
 
 		<div class="container">
 

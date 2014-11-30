@@ -41,6 +41,25 @@ body {
 
 @import 'page';
 @import 'post-types';
+#header-title{
+	height:60px;
+	padding-bottom:160px;
+	background:url(../images/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.head-title {
+	margin-top:55px;
+	padding: 30px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 2.1428571435;
+	color: inherit;
+	text-align: center;
+	// border: 1px solid red;
+}
 
 .two-column-first {
 	border-left: 1px solid #eee;

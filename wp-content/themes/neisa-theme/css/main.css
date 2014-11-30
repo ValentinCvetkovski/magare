@@ -2468,25 +2468,25 @@ body { /*padding-top: 70px;*/ }
 /* line 14, ../sass/_header.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { color: #dd682c; background-color: #fff; }
 
-/* line 20, ../sass/_header.scss */
-#header { height: auto; padding-bottom: 160px; background: url(../images/bg.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-
-/* line 28, ../sass/_header.scss */
-.news { margin-top: 180px; padding: 30px; font-size: 24px; font-weight: 200; line-height: 2.1428571435; color: inherit; /*background-color: #eeeeee;*/ }
-
 /* line 26, ../sass/main.scss */
 #header { height: 400px; }
 
 /* ==========================================================================
 	 Front Page
 	 ========================================================================== */
-/* line 3, ../sass/_frontpage.scss */
+/* line 1, ../sass/_frontpage.scss */
+#header { height: 300px; padding-bottom: 160px; background: url(../images/bg.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+
+/* line 12, ../sass/_frontpage.scss */
+.news { margin-top: 100px; padding: 30px; font-size: 24px; font-weight: 200; line-height: 2.1428571435; color: inherit; /*background-color: #eeeeee;*/ }
+
+/* line 23, ../sass/_frontpage.scss */
 .container .row { margin: 40px 0; }
 
-/* line 5, ../sass/_frontpage.scss */
+/* line 25, ../sass/_frontpage.scss */
 footer { background: #f29666; }
 
-/* line 7, ../sass/_frontpage.scss */
+/* line 27, ../sass/_frontpage.scss */
 .text-muted { padding-top: 5px; color: #fff; }
 
 /* jQuery FlexSlider v2.2.0 http://www.woothemes.com/flexslider/  Copyright 2012 WooThemes Free to use under the GPLv2 license. http://www.gnu.org/licenses/gpl-2.0.html  Contributing author: Tyler Smith (@mbmufffin) */
@@ -2633,10 +2633,16 @@ html[xmlns] .slides { display: block; }
 /* ==========================================================================
 	 content
 	 ========================================================================== */
-/* line 45, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
+#header-title { height: 60px; padding-bottom: 160px; background: url(../images/bg.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+
+/* line 53, ../sass/main.scss */
+.head-title { margin-top: 55px; padding: 30px; font-size: 24px; font-weight: 500; line-height: 2.1428571435; color: inherit; text-align: center; }
+
+/* line 64, ../sass/main.scss */
 .two-column-first { border-left: 1px solid #eee; padding-left: 20px; }
 
-/* line 49, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 .two-column-second { border-left: 1px solid #eee; padding-left: 20px; }
 
 /* ==========================================================================

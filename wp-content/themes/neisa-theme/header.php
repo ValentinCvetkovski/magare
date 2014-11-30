@@ -23,15 +23,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-
-
-
-
-
-
-
-
-		    <!-- Fixed navbar -->
+		<!-- Fixed navbar -->
 	    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 
 	      	<div class="container">
@@ -62,92 +54,16 @@
 				);
 				?>
 
-
-	        <!--<div id="navbar" class="navbar-collapse collapse">
-	          <ul class="nav navbar-nav">
-	            <li class="active"><a href="index.html">Start</a></li>
-	            <li><a href="om.html">Om Neisa</a></li>
-	            <li><a href="tjanster.html">Våra tjänster</a></li>
-	            <li><a href="kontakt.html">Kontakt</a></li>
-
-
-	            <li class="dropdown">
-	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-	              <ul class="dropdown-menu" role="menu">
-	                <li><a href="#">Action</a></li>
-	                <li><a href="#">Another action</a></li>
-	                <li><a href="#">Something else here</a></li>
-	                <li class="divider"></li>
-	                <li class="dropdown-header">Nav header</li>
-	                <li><a href="#">Separated link</a></li>
-	                <li><a href="#">One more separated link</a></li>
-	              </ul>
-	            </li>
-
-
-	          </ul>
-	          <ul class="nav navbar-nav navbar-right">
-	            <li><a href="../navbar/">Eng</a></li>
-	            <!- <li><a href="../navbar-static-top/">Swe</a></li> ->
-	            <li class="active"><a href="./">Sv <span class="sr-only">(current)</span></a></li>
-	          </ul>
-	        </div><!-/.nav-collapse -->
 	     	</div>
 	    </nav>
-
-		<div id="header">
-		  <div class="container">
-		    <div class="news">
-
-
-		        <!-- Place somewhere in the <body> of your page -->
-				<div class="flexslider">
-					<ul class="slides">
-
-						<?php $new_statement = new WP_Query(
-																array(
-																'post_type'      => 'statement',
-																'posts_per_page' => -1,
-																));
-
-						if ( $new_statement->have_posts() ) :
-
-							while ( $new_statement->have_posts() ) : $new_statement->the_post(); ?>
-
-								<li>
-									<h1><?php the_title(); ?></h1>
-								</li>
-
-							<?php endwhile; ?>
-
-						<?php else: ?>
-
-						<?php endif; ?>
-
-						<?php wp_reset_postdata(); ?>
-
-					</ul>
-				</div>
-
-		    </div><!-- /news -->
-		  </div><!-- /container -->
-		</div><!-- /header -->
-
-
-
-
-
-
-
-
-
-
-
 
 
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+
+
+
 
 		<!-- <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'neisa-theme' ); ?></a> -->
 		<!--<div class="site-branding">
