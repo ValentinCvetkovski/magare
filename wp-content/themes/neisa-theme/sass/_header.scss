@@ -16,6 +16,43 @@
   background-color: #fff;
 }
 
+@media(min-width:767px){
+	.nav.navbar-nav li:hover {
+		.dropdown-menu {
+			display: block;
+		}
+	}
+}
 
+.nav.navbar-nav li.menu-item-has-children a:after{
+		float: right;
+		content: '';
+		width: 0;
+		height: 0;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
 
+		border-top: 5px solid #dd682c;
+		margin-top: 8px;
+		margin-left: 5px;
+	}
+@media(max-width:767px){
+	.nav.navbar-nav li.menu-item-has-children .dropdown-menu {
+		display: none;
+	}
+	.nav.navbar-nav li.menu-item-has-children .dropdown-menu li a:after {
+		display: none;
+	}
+	.nav.navbar-nav li.menu-item-has-children a:after{
+		float: right;
+		content: '';
+		width: 0;
+		height: 0;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
 
+		border-top: 5px solid #dd682c;
+
+	}
+
+}

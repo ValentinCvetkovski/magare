@@ -27,6 +27,14 @@ body {
 	height: 400px;
 }
 
+.logged-in.admin-bar {
+	.navbar-fixed-top{
+		margin-top: 32px;
+		@media(max-width:767px){
+			margin-top: 46px;
+		}
+	}
+}
 
 /* ==========================================================================
 	 Front Page
@@ -70,8 +78,34 @@ body {
 	padding-left: 20px;
 }
 
+.left-side-menu {
+	ul li a{
+		color: black;
+	}
+}
 /* ==========================================================================
 	 footer
 	 ========================================================================== */
 
 @import 'footer';
+
+
+
+
+
+
+
+
+
+
+
+
+/* fix */
+
+.alignnone {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}

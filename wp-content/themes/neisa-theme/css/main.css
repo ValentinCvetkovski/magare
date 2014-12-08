@@ -2468,8 +2468,24 @@ body { /*padding-top: 70px;*/ }
 /* line 14, ../sass/_header.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { color: #dd682c; background-color: #fff; }
 
+@media (min-width: 767px) { /* line 21, ../sass/_header.scss */
+  .nav.navbar-nav li:hover .dropdown-menu { display: block; } }
+/* line 27, ../sass/_header.scss */
+.nav.navbar-nav li.menu-item-has-children a:after { float: right; content: ''; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #dd682c; margin-top: 8px; margin-left: 5px; }
+
+@media (max-width: 767px) { /* line 40, ../sass/_header.scss */
+  .nav.navbar-nav li.menu-item-has-children .dropdown-menu { display: none; }
+  /* line 43, ../sass/_header.scss */
+  .nav.navbar-nav li.menu-item-has-children .dropdown-menu li a:after { display: none; }
+  /* line 46, ../sass/_header.scss */
+  .nav.navbar-nav li.menu-item-has-children a:after { float: right; content: ''; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #dd682c; } }
 /* line 26, ../sass/main.scss */
 #header { height: 400px; }
+
+/* line 31, ../sass/main.scss */
+.logged-in.admin-bar .navbar-fixed-top { margin-top: 32px; }
+@media (max-width: 767px) { /* line 31, ../sass/main.scss */
+  .logged-in.admin-bar .navbar-fixed-top { margin-top: 46px; } }
 
 /* ==========================================================================
 	 Front Page
@@ -2633,18 +2649,24 @@ html[xmlns] .slides { display: block; }
 /* ==========================================================================
 	 content
 	 ========================================================================== */
-/* line 44, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 #header-title { height: 60px; padding-bottom: 160px; background: url(../images/bg.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
-/* line 53, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .head-title { margin-top: 55px; padding: 30px; font-size: 24px; font-weight: 500; line-height: 2.1428571435; color: inherit; text-align: center; }
 
-/* line 64, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 .two-column-first { border-left: 1px solid #eee; padding-left: 20px; }
 
-/* line 68, ../sass/main.scss */
+/* line 76, ../sass/main.scss */
 .two-column-second { border-left: 1px solid #eee; padding-left: 20px; }
+
+/* line 82, ../sass/main.scss */
+.left-side-menu ul li a { color: black; }
 
 /* ==========================================================================
 	 footer
 	 ========================================================================== */
+/* fix */
+/* line 105, ../sass/main.scss */
+.alignnone { display: block; max-width: 100%; height: auto; margin-bottom: 10px; margin-top: 10px; }

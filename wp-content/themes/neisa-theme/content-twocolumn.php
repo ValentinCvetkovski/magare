@@ -26,29 +26,41 @@ Template Name: Two Column
 						<div class="row">
 
 
-								<div class="col-md-2">
+							<div class="col-md-2 left-side-menu">
+
+								<?php if($post->post_parent)
+									$children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
+								else
+								$children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
+								if ($children) { ?>
 									<ul>
-									  <li>1</li>
-									  <li>2</li>
-									  <li>3</li>
-									  <li>4</li>
-									  <li>5</li>
+										<?php echo $children; ?>
 									</ul>
-								</div><!-- /.col-xs-4 .col-md-2 -->
+								<?php } ?>
+
+							</div><!-- /.col-xs-4 .col-md-2 -->
 
 
 								<div class="col-md-6 two-column-first">
-									<h1><?php the_title(); ?></h1>
+									<?php
+									if ( has_post_thumbnail() ) :
+										the_post_thumbnail( 'full', array( 'class' => 'img-responsive' ) );
+									endif;
+									?>
 									<p><?php the_content(); ?></p>
 								</div><!-- /.col-xs-8 .col-md-6 -->
 
 
 								<div class="col-md-4 two-column-second">
 									<?php
-									if ( has_post_thumbnail() ) :
-										the_post_thumbnail( 'medium', array( 'class' => 'img-responsive' ) );
-									endif;
-									?>
+
+									$image = get_field('bild_column_2');
+
+									if ( !empty( $image ) ) : ?>
+
+										<img src="<?php echo $image ?>" class="img-responsive" />
+
+									<?php endif; ?>
 									<h1><?php the_field( 'second_column_title' ); ?></h1>
 									<p><?php the_field( 'second_column' ); ?></p>
 								</div><!-- /.col-xs-6 .col-md-4 -->

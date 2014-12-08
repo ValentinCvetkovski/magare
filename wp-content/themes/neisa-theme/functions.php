@@ -221,9 +221,7 @@ add_action( 'init', 'neisa_custom_posttypes' );
 
 
 
-
-
-/****** Add Thumbnails in Manage Posts/Pages List ******/
+/** Add Thumbnails in Manage Posts/Pages List */
 if ( !function_exists('AddThumbColumn') && function_exists('add_theme_support') ) {
 
     // for post and page
@@ -269,3 +267,4 @@ if ( !function_exists('AddThumbColumn') && function_exists('add_theme_support') 
     add_filter( 'manage_pages_columns', 'AddThumbColumn' );
     add_action( 'manage_pages_custom_column', 'AddThumbValue', 10, 2 );
 }
+

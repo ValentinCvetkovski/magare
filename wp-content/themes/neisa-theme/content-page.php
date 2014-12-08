@@ -25,16 +25,17 @@
 
 						<div class="row">
 
-							<div class="col-md-2">
+							<div class="col-md-2 left-side-menu">
 
-							<ul>
-							  <li>1</li>
-							  <li>2</li>
-							  <li>3</li>
-							  <li>4</li>
-							  <li>5</li>
-							</ul>
-
+								<?php if($post->post_parent)
+									$children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
+								else
+								$children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
+								if ($children) { ?>
+									<ul>
+										<?php echo $children; ?>
+									</ul>
+								<?php } ?>
 
 							</div><!-- /.col-xs-4 .col-md-2 -->
 
